@@ -1,0 +1,45 @@
+{
+  "name": "HireMate Onboarding Flow",
+  "nodes": [
+    {
+      "type": "InputNode",
+      "id": "user_input",
+      "name": "User Input",
+      "outputs": ["IntentRouter"]
+    },
+    {
+      "type": "RouterNode",
+      "id": "intent_router",
+      "name": "IntentRouter",
+      "inputs": ["User Input"],
+      "outputs": ["FAQTool", "GoogleSheetsTool", "Scheduler"]
+    },
+    {
+      "type": "ToolNode",
+      "id": "faq_tool",
+      "name": "FAQTool",
+      "inputs": ["IntentRouter"],
+      "outputs": ["FinalResponse"]
+    },
+    {
+      "type": "ToolNode",
+      "id": "sheet_logger",
+      "name": "GoogleSheetsTool",
+      "inputs": ["IntentRouter"],
+      "outputs": ["FinalResponse"]
+    },
+    {
+      "type": "ToolNode",
+      "id": "scheduler",
+      "name": "Scheduler",
+      "inputs": ["IntentRouter"],
+      "outputs": ["FinalResponse"]
+    },
+    {
+      "type": "OutputNode",
+      "id": "final_response",
+      "name": "FinalResponse",
+      "inputs": ["FAQTool", "GoogleSheetsTool", "Scheduler"]
+    }
+  ]
+}
