@@ -39,6 +39,9 @@ cd HireMateChatbot
 pip install -r requirements.txt
 streamlit run app.py
 
+## 🌐 Live Demo  
+🔗 https://hirematechatbot.streamlit.app
+
 🤝 Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you’d like to modify.
