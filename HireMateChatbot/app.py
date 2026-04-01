@@ -49,4 +49,4 @@ if name:
         with st.chat_message("assistant"):
             st.write(reply)
 
-        log_to_google_sheet(name, user_input, reply)
+        log_to_google_sheet(name, user_input, reply) 
