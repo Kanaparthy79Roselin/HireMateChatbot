@@ -1,128 +1,43 @@
-# HireMateChatbot
-AI-powered HR onboarding chatbot built with Streamlit, OpenAI, and Google Sheets integration.
-🚀 HireMate – AI-Powered HR Onboarding Chatbot
+# 💖 HireMate – HR Onboarding Chatbot
 
-HireMate is a GenAI-powered HR Onboarding Chatbot designed to simplify and automate the employee onboarding journey. It provides instant responses to HR-related queries, assists new hires with policies, onboarding tasks, employee documents, and ensures a smooth start using an AI-driven conversational interface.
+💡 A visually enhanced AI-powered HR chatbot with a pink-themed interactive UI built using Streamlit.
 
-📌 🔍 Project Overview
+---
 
-Traditional onboarding is slow, manual, and confusing for new employees. HireMate solves this problem using:
+## 📌 Overview
 
-Natural Language Processing (NLP)
+HireMate is a simple and efficient HR onboarding assistant that helps new employees get instant answers to common onboarding questions such as documents, benefits, and orientation.
 
-LLM-powered conversational intelligence
+It provides a smooth and user-friendly chatbot experience with a modern UI.
 
-Document-based Q&A (RAG Pipeline)
+---
 
-Automated onboarding flow & HR guidance
+## ✨ Features
 
-This chatbot acts as a 24/7 personal HR assistant — answering questions, providing onboarding steps, and reducing HR workload.
+- 🤖 HR FAQ Assistant (documents, benefits, onboarding)
+- 💬 Interactive chatbot interface
+- 💖 Attractive pink UI with floating hearts
+- ⚡ Fast and lightweight Streamlit app
+- 📊 (Optional) Google Sheets logging
 
-✨ Key Features
-🤖 Smart HR Query Assistant
+---
 
-Answers queries related to policies, onboarding, travel, IT support, and more.
+## 🛠️ Tech Stack
 
-Supports natural and conversational language.
+- Python
+- Streamlit
+- OpenAI API (optional)
+- Google Sheets API (optional)
 
-📄 RAG (Retrieval-Augmented Generation)
+---
 
-Uses company policy documents or knowledge base
+## ▶️ How to Run
 
-Retrieves relevant information + generates accurate responses
-
-🧭 Personalized Onboarding Guide
-
-Welcomes new hires
-
-Guides users through onboarding steps (documents, ID creation, orientation, etc.)
-
-🧠 AI-Powered Conversation Flow
-
-Uses LLMs to generate contextual, human-like responses
-
-Handles follow-up questions
-
-🗂️ Integration Ready
-
-Supports Google Sheets / Database storage for logs (if needed)
-
-Compatible with APIs & HRMS tools
-
-Cloud deployment ready (Streamlit / FastAPI / Render / HuggingFace Spaces)
-
-🛠️ Tech Stack
-Component	Technology Used
-Frontend / UI	Streamlit
-Backend	Python
-LLM / AI Engine	OpenAI API / GenAI Model
-Workflow Logic	LangChain-style / Custom logic
-Data Storage (Optional)	Google Sheets API
-Vector Search (Optional)	FAISS / ChromaDB
-Deployment	Streamlit Cloud / Local
-
-📂 Project Structure
-HireMateChatbot/
-│── main.py
-│── chatbot.py
-│── utils/
-│── prompts/
-│── data/
-│── requirements.txt
-│── README.md
-
-
-🔧 (Adjust according to your actual repo structure.)
-
-🔧 Installation & Setup
-1️⃣ Clone the Repository
+```bash
 git clone https://github.com/Kanaparthy79Roselin/HireMateChatbot.git
 cd HireMateChatbot
-
-2️⃣ Install Dependencies
 pip install -r requirements.txt
-
-3️⃣ Add Environment Variables
-
-Create a .env file:
-
-OPENAI_API_KEY=your_key_here
-GOOGLE_SHEETS_CREDENTIALS=your_json_here (optional)
-
-4️⃣ Run the Chatbot
-streamlit run main.py
-
-💬 Example Conversations
-
-User: What documents do I need for onboarding?
-HireMate:
-You will need:
-
-Aadhar card
-
-PAN card
-
-Passport-size photo
-
-Bank details
-
-Signed offer letter
-
-User: How many leaves do I get per year?
-HireMate:
-According to the HR leave policy, new employees receive 12 annual leaves per calendar year.
-
-🚀 Future Enhancements
-
-Add WhatsApp / Telegram chatbot integration
-
-Dashboard for HR analytics
-
-Voice-enabled onboarding assistant
-
-Multi-language support
-
-Email automation for onboarding tasks
+streamlit run app.py
 
 🤝 Contributing
 
